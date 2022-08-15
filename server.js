@@ -22,7 +22,7 @@ app.get('/hello/:name', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-	res.render('about.hbs', { layout: dark });
+	res.render('about.hbs', { layout: 'dark' });
 });
 
 app.get('/contact', (req, res) => {
@@ -30,7 +30,7 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/info', (req, res) => {
-	res.render('info.hbs', { layout: dark });
+	res.render('info.hbs', { layout: 'dark' });
 });
 
 app.get('/history', (req, res) => {
